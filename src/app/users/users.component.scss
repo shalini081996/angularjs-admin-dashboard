@@ -1,0 +1,12 @@
+.table-container {
+    .mat-mdc-table {
+        background-color: rgb(218, 216, 216);
+        .mat-mdc-header-row {
+            color: black;
+            font-weight: bold;
+        }
+        .mat-mdc-row {
+            color: black;
+        }
+    } 
+}

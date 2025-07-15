@@ -1,0 +1,35 @@
+.sidenav-container {
+    width: auto;
+    height: 100vh;
+    border: 1px solid #555;
+    /* The background property is added to clearly distinguish the borders between drawer and main
+     content */
+    background: #eee;
+}
+
+.sidenav {
+    padding: 2rem 0;
+    background-color: #2a3036;
+}
+
+.title {
+    // text-align: center;
+    margin-left: 2rem;
+}
+
+.sidenav-content {
+    height: 100vh;
+    padding: 2rem;
+    color: #2a3036;
+
+}
+
+.list-icon {
+    margin: 0.5rem 0.5rem -0.3rem 0.5rem;
+}
+
+.list-item:hover{
+    cursor: pointer;
+    background-color: #555;
+    padding-bottom: 0.75rem;
+}

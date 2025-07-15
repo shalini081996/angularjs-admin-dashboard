@@ -1,0 +1,6 @@
+<div class="card-container">
+    <h6>{{cardDetails.title}}</h6>
+    <div class="card-data">
+        <span *ngIf="cardDetails?.isCurrency">$</span><span>{{cardDetails.data}}</span>
+    </div>
+</div>

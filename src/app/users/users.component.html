@@ -1,0 +1,50 @@
+<div class="my-2 py-2">
+    <input type="text" placeholder="Search Role" id="search" name="search" [ngModel]="searchText" (ngModelChange)="search($event)" matInput>
+</div>
+
+<div class="table-container mat-elevation-z8">
+  <mat-table #table [dataSource]="filteredUsers">
+    <ng-container matColumnDef="id">
+      <mat-header-cell *matHeaderCellDef> ID </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.id}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="name">
+      <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="email">
+      <mat-header-cell *matHeaderCellDef> Email </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.email}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="role">
+      <mat-header-cell *matHeaderCellDef> Role </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.role}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="isActive">
+      <mat-header-cell *matHeaderCellDef> Is Active </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.isActive}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="totalOrders">
+      <mat-header-cell *matHeaderCellDef> Total Orders </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.totalOrders}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="totalSpent">
+      <mat-header-cell *matHeaderCellDef> Total Spent </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.totalSpent}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="registeredAt">
+      <mat-header-cell *matHeaderCellDef> Regesitered At </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.registeredAt}} </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</div>

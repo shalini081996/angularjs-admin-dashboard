@@ -84,4 +84,5 @@ export class UsersService {
   getUsers(): IEcommerceUser[] {
     return ECOMMERCE_USERS_MOCK;
   }
+
 }

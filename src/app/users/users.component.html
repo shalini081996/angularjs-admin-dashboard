@@ -1,5 +1,10 @@
 <div class="my-2 py-2">
-    <input type="text" placeholder="Search Role" id="search" name="search" [ngModel]="searchText" (ngModelChange)="search($event)" matInput>
+  <input type="text" placeholder="Search Role" id="search" name="search" [ngModel]="searchText"
+    (ngModelChange)="search($event)" matInput>
+</div>
+
+<div class="my-2 py-2">
+  <button (click)="addUser()" class="add-user-btn" mat-button>Add User</button>
 </div>
 
 <div class="table-container mat-elevation-z8">

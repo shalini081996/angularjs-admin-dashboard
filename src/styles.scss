@@ -1,4 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-mdc-dialog-surface {
+    background: white !important;
+    padding: 1rem;
+}
+
+label {
+    color: black;
+}
+
+.mat-mdc-button:not(:disabled) {
+    color: white !important;
+    background-color: black;
+}
+.mat-mdc-button{
+    color: white;
+}
+.mat-mdc-butto:hover {
+    color: white;
+    background-color: rgb(19, 19, 19);
+}

@@ -1,0 +1,32 @@
+:
+<h2>E-Commerce User Form</h2>
+<mat-dialog-content>
+    <form [formGroup]="userForm">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-12 m-2">
+                <label class="pe-2">Name</label>
+                <input formControlName="name">
+            </div>
+            <div class="col-md-12 m-2">
+                <label class="pe-2">Email</label>
+                <input formControlName="email">
+            </div>
+            <div class="col-md-12 m-2">
+                <label class="pe-2">Role</label>
+                <select formControlName="role">
+                    <option [value]="'Customer'">Customer</option>
+                    <option [value]="'Seller'">Seller</option>
+                    <option [value]="'Admin'">Admin</option>
+                </select>
+            </div>
+        </div>
+    </form>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-raised-button class="submit-btn" type="button" (click)="close()">
+        Close
+    </button>
+    <button mat-raised-button class="ms-2submit-btn" type="button" (click)="onSubmit()">
+        Submit
+    </button>
+</mat-dialog-actions>

@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "dist/angularjs-admin-dashboard/**",
+      "src": "dist/angularjs-admin-dashboard/browser/**",
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "dist/angularjs-admin-dashboard/index.html"
+      "dest": "dist/angularjs-admin-dashboard/browser/index.html"
     }
   ]
 }
